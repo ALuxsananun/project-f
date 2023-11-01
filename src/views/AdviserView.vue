@@ -8,6 +8,7 @@ import { useAdviserStore } from "@/stores/newAdviser";
 import AdviserService from "@/services/AdviserService";
 import BaseInput from "@/components/BaseInput.vue";
 import router from "@/router";
+import {RouterLink} from "vue-router";
 const adviserStore = useAdviserStore();
 const professer: Ref<Array<AdviserItem>> = ref([]);
 const totalEvent = ref<number>(0);
@@ -58,14 +59,41 @@ function updateKeyword (value: string) {
 
 <template>
   <div>
-    <div class="w-64 ml-10 my-10 font-mono">
-    <BaseInput 
-    v-model="keyword"
-    placeholder="Search..."
-    @input="updateKeyword"
-    class="w-full p-2 border"
-    />
-  </div>
+    <div class="pt-3 px-2 mb-2">
+      <span class="Left">
+        <BaseInput
+            v-model="keyword"
+            placeholder="Search..."
+            @input="updateKeyword"
+            class=" p-2 pl-5 border rounded-full"
+        />
+      </span>
+      <span>
+        <RouterLink
+            to="/registerAdvisor"
+            class="text-black hover:shadow-grey-300 hover:shadow-lg hover:font-bold text-xl"
+            active-class="active-link"
+            exact-active-class="active-link"
+        >Add</RouterLink
+          >
+      </span>
+      <span class="Right">
+        <RouterLink
+            to="/students"
+            class="text-black transition-colors duration-300 hover:text-black text-xl"
+            active-class="active-link"
+            exact-active-class="active-link"
+        >Student </RouterLink
+        >
+        <RouterLink
+            to="/advisors"
+            class="text-black transition-colors duration-300 hover:text-black text-xl"
+            active-class="active-link"
+            exact-active-class="active-link"
+        >| Advisor</RouterLink
+        >
+      </span>
+    </div>
     <div class="grid grid-cols-2 gap-2 mb-4 mt-5">
       <AdviserList
         v-for="professers in professer"
@@ -96,3 +124,17 @@ function updateKeyword (value: string) {
     </div>
   </div>
 </template>
+
+<style scoped>
+.Right{
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.Left{
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 64px;
+}
+</style>
