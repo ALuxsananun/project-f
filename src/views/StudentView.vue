@@ -66,17 +66,18 @@ function updateKeyword (value: string) {
       <span class="Right">
         <RouterLink
             to="/students"
-            class="text-black transition-colors duration-300 hover:text-black text-xl"
+            class="text-black hover:shadow-grey-300 hover:shadow-lg hover:font-semibold rounded-lg text-xl p-1"
             active-class="active-link"
             exact-active-class="active-link"
-        >Student </RouterLink
+        >Student</RouterLink
         >
+        <span class="text-xl"> | </span>
         <RouterLink
             to="/advisors"
-            class="text-black transition-colors duration-300 hover:text-black text-xl"
+            class="text-black hover:shadow-grey-300 hover:shadow-lg hover:font-semibold rounded-lg text-xl p-1"
             active-class="active-link"
             exact-active-class="active-link"
-        >| Advisor</RouterLink
+        >Advisor</RouterLink
         >
       </span>
     </div>

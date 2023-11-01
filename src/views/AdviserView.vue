@@ -68,10 +68,10 @@ function updateKeyword (value: string) {
             class=" p-2 pl-5 border rounded-full"
         />
       </span>
-      <span>
+      <span class="ml-3">
         <RouterLink
             to="/registerAdvisor"
-            class="text-black hover:shadow-grey-300 hover:shadow-lg hover:font-bold text-xl"
+            class="text-black font-semibold hover:shadow-grey-300 hover:shadow-lg hover:font-bold border-2 rounded-lg p-1 px-2"
             active-class="active-link"
             exact-active-class="active-link"
         >Add</RouterLink
@@ -80,17 +80,18 @@ function updateKeyword (value: string) {
       <span class="Right">
         <RouterLink
             to="/students"
-            class="text-black transition-colors duration-300 hover:text-black text-xl"
+            class="text-black hover:shadow-grey-300 hover:shadow-lg hover:font-semibold rounded-lg text-xl p-1"
             active-class="active-link"
             exact-active-class="active-link"
-        >Student </RouterLink
+        >Student</RouterLink
         >
+        <span class="text-xl"> | </span>
         <RouterLink
             to="/advisors"
-            class="text-black transition-colors duration-300 hover:text-black text-xl"
+            class="text-black hover:shadow-grey-300 hover:shadow-lg hover:font-semibold rounded-lg text-xl p-1"
             active-class="active-link"
             exact-active-class="active-link"
-        >| Advisor</RouterLink
+        >Advisor</RouterLink
         >
       </span>
     </div>
