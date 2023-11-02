@@ -33,24 +33,27 @@ function flashMessagge() {
 </script>
 
 <template>
-  <div v-if="professor">
+  <div v-if="professor" class="font-mono">
     <div class="mt-10 flex justify-center">
       <img :src="professor?.image[0]" 
       class="border-4 border-black h-60 w-60 object-cover rounded-xl"
       />
     </div>
-  <div class="flex justify-center mt-10" >
+    <div class="text-center text-2xl font-bold mt-3">My Adivor
+      <div class="flex justify-center mt-2" >
     <div class="text-left font-mono grid grid-cols-2 text-xl">
-      <p class="font-bold">Advisor-ID:</p>
+      <p class="font-bold">AdvisorID:</p>
       <p class="ml-3">{{ professor.advisorID }}</p>
-      <p class="font-bold">Advisor-Name:</p>
+      <p class="font-bold">Name:</p>
       <p class="ml-3">
         {{ student?.advisor.name }} {{ professor.surname }}
       </p>
-      <p class="font-bold">Department:</p>
+      <p class="font-bold">Course:</p>
       <p class="ml-3">{{ professor.department }}</p>
     </div>
   </div>
+    </div>
+  
   </div>
 
   

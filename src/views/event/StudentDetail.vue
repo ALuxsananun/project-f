@@ -24,7 +24,7 @@ function addDetail() {
   <div v-if="student" class="font-mono grid grid-cols-2">
     <p class="font-semibold text-left">Name-SurName:</p>
     <p class="text-center">{{ student.name }} {{ student.surname }}</p>
-    <p class="font-semibold text-left">Department:</p>
+    <p class="font-semibold text-left">Course:</p>
     <p class="text-center">{{ student.department }}</p>
 
   </div>

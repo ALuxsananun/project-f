@@ -16,7 +16,7 @@
           Name: {{ advisorProfile?.name }} {{ advisorProfile?.surname }}
         </p>
         <p class="text-lg font-semibold">
-          Department: {{ advisorProfile?.department }}
+          Course: {{ advisorProfile?.department }}
         </p>
         <p class="text-lg font-semibold">
           Position: {{ advisorProfile.position }}

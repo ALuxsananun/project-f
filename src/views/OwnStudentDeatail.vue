@@ -14,7 +14,7 @@
         <p class="text-lg font-semibold">Name: {{ student.name }}</p>
         <p class="text-lg font-semibold">Surname: {{ student.surname }}</p>
         <p class="text-lg font-semibold">
-          Department: {{ student.department }}
+          Course: {{ student.department }}
         </p>
       </div>
     </div>

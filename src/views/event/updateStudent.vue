@@ -56,25 +56,25 @@ import UploadImage from "@/components/UploadImage.vue";
 
 <template>
   <div v-if="currentStudent.id">
-    <form>
+    <form class="font-mono mt-5">
       <div class="mb-4">
         <label for="Name" class="block text-gray-700 font-bold mb-2"
-          >Name</label
+          >Name:</label
         >
         <input
           type="text"
           v-model="currentStudent.name"
-          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+          class="w-3/6 px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
         />
       </div>
       <div class="mb-4">
         <label for="Surname" class="block text-gray-700 font-bold mb-2"
-          >Surname</label
+          >Surname:</label
         >
         <input
           id="description"
           v-model="currentStudent.surname"
-          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+          class="w-3/6 px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
         />
       </div>
     </form>
