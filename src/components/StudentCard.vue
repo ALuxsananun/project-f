@@ -13,7 +13,7 @@ const props = defineProps({
     <div class="flex justify-center items-center mb-2">
       <div
         v-if="student"
-        class="border-2 w-3/4 h-38 p-2 bg-white text-black border-black rounded-lg hover:bg-black hover:text-white"
+        class="border-2 w-3/4 h-38 p-2 bg-white text-black border-black rounded-lg hover:shadow-grey-300 hover:shadow-lg hover:scale-110"
       >
         <div class="flex row-auto">
           <div class="mr-2">

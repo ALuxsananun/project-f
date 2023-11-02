@@ -53,62 +53,8 @@ const onSubmit = handleSubmit((value) => {
 });
 </script>
 
-<!-- <template>
-  <div class="flex justify-center my-20">
-    <div class="border-black-50 border-2 w-2/5">
-      <div class="flex flex-col justify-center my-10">
-        <div class="font-mono text-red-700">
-          <h2 class="font-bold text-3xl text-center">
-            Sign in to your account
-          </h2>
-        </div>
-        <div class="sm:mx-auto sm:w-full sm:max-w-sm font-mono mt-10">
-          <form @submit.prevent="onSubmit">
-            <div class="my-2">
-              <label
-                for="username"
-                class="block text-sm font-bold leading-6 text-gray-900"
-                >Username</label
-              >
-              <InputText
-                type="text"
-                v-model="username"
-                :error="errors['username']"
-              ></InputText>
-            </div>
-            <div class="my-2">
-              <div>
-                <label
-                  for="password"
-                  class="block text-sm font-bold leading-6 text-gray-900"
-                  >Password</label
-                >
-                <InputText
-                  type="password"
-                  v-model="password"
-                  :error="errors['password']"
-                ></InputText>
-              </div>
-            </div>
-            <div class="flex justify-center mt-8">
-              <button
-                type="submit"
-                class="font-mono text-center bg-red-700 p-2 text-white font-bold rounded-xl w-24"
-              >
-                Sign-In
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</template> -->
 <template>
   <div class="containerd">
-    <div class="picture-section">
-      <div class="image-container"></div>
-    </div>
     <div class="login-section flex justify-center">
       <div class="border-2 p-10 w-1/2 h-96 flex justify-center mt-28 rounded-lg">
         <form @submit.prevent="onSubmit">
@@ -129,7 +75,7 @@ const onSubmit = handleSubmit((value) => {
           />
         </div>
         <div class="mt-7 flex justify-center">
-          <button type="submit" class="mx-auto border-2 bg-white border-black py-2 px-5 rounded-lg hover:bg-black hover:text-white font-bold"
+          <button type="submit" class="mx-auto border-2 border-black py-2 px-5 rounded-lg hover:shadow-grey-300 hover:shadow-lg hover:font-bold font-bold"
           >Login</button>
         </div>
         <div class="text-center my-5">
