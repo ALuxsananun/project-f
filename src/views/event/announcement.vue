@@ -13,9 +13,9 @@ const props = defineProps({
 <template>
   <div v-if="student" class="font-mono">
     <div>
-      <p class="font-bold text-center text-xl mt-5">Announcement List By {{ student.advisor.name }}</p>
+      <p class="font-bold text-center text-2xl mt-5">Announcement List By {{ student.advisor.name }}</p>
     </div>
-    <div class="text-left ml-20 text-lg">
+    <div class="text-left ml-20 text-xl">
       <ul class="my-2 ">
         <li
           v-for="(announce, index) in student.advisor.announcements"

@@ -22,9 +22,8 @@ const authStore = useAuthStore();
           alt="Student Image" class="object-scale-down rounded-md" />
       </div>
       <div
-        class="pl-2 border-2 bg-white h-50 w-full flex flex-col items-left rounded-md"
-      >
-        <p class="mt-2">ID: {{ student.id }}</p>
+        class="pl-2 border-2 bg-white h-50 w-full flex flex-col items-left rounded-md">
+        <p class="mt-2">ID: {{ student.studentID }}</p>
         <p class="mt-2">Name-Surname: {{ student.name }} {{ student.surname }}</p>
         <p class="mt-2">Course: {{ student.department }}</p>
         </div>
